@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Hello World</title> 
+          <link rel="stylesheet" href="style.css">
+          <script src="./script.js"></script>
+  </head>
+ 
+  <body> 
+          <div class="wrapper">
+                  <div style="width:50%; margin: 0 auto; text-align: center;">
+                        <h1>Uge 32</h1>
+                        <h2>Januar</h2>
+                </div>
+                  <div class="date-box">
+                          <div class="day-box">
+                                  <h2 class="day-name">Man</h2>
+                                  <h2 class="day-number">8</h2>
+                                </div>
+
+                                <div class="time-btn-wrapper">
+                                        <div class="time-box">
+                                                <p class="from-time"> Optaget Fra 11:00</p>
+                                                <p class="to-time"> Til 13:00</p>
+                                        </div>
+
+                                        <div class="time-box">
+
+                                        </div>
+
+                                        <button  id="myBtn" class="action-btn">Lav planer</button>
+                                </div>
+                        </div> 
+
+
+
+
+                         <div class="date-box">
+                          <div class="day-box">
+                                  <h2 class="day-name">Tir</h2>
+                                  <h2 class="day-number">9</h2>
+                                </div>
+
+                                <div class="time-btn-wrapper">
+                                        <div class="time-box">
+                                                <p class="from-time"> Optaget Fra 14:00</p>
+                                                <p class="to-time"> 20:00</p>
+                                        </div>
+
+                                        <button class="action-btn">Lav planer</button>
+                                </div>
+                        </div>
+
+
+
+
+                         <div class="date-box">
+                          <div class="day-box">
+                                  <h2 class="day-name">Ons</h2>
+                                  <h2 class="day-number">10</h2>
+                                </div>
+
+                                <div class="time-btn-wrapper">
+                                        <div class="time-box">
+                                                <p class="from-time"> Optaget Fra 11:00</p>
+                                                <p class="to-time"> 12:00</p>
+                                        </div>
+
+                                        <button class="action-btn">Lav planer</button>
+                                </div>
+                        </div>
+
+                        
+                         <div class="date-box">
+                          <div class="day-box">
+                                  <h2 class="day-name">Tor</h2>
+                                  <h2 class="day-number">11</h2>
+                                </div>
+
+                                <div class="time-btn-wrapper">
+                                        <div class="time-box">
+                                                <p class="from-time"> Optaget Fra 19:00</p>
+                                                <p class="to-time"> 23:00</p>
+                                        </div>
+
+                                        <button class="action-btn">Lav planer</button>
+                                </div>
+                        </div>
+
+                        
+                         <div class="date-box">
+                          <div class="day-box">
+                                  <h2 class="day-name">Fre</h2>
+                                  <h2 class="day-number">12</h2>
+                                </div>
+
+                                <div class="time-btn-wrapper">
+                                        <div class="time-box">
+                                                <p class="from-time"> Fridag</p>
+                                        </div>
+
+                                        <button class="action-btn">Lav planer</button>
+                                </div>
+                        </div>
+          </div>
+
+          <div id="myModal" class="modal">
+                  
+                  <div class="modal-content">
+    <span class="close">&times;</span>
+  
+    <p>Lav plan</p>
+    <div style="display: flex; width: 100; justify-content: space-around;">
+            <div>
+                  <p>Fra</p> 
+                  <select style="width: 100%; padding: 10px;">
+                          <option>00</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+
+                  </select>
+            </div>
+            <div>
+                    <p>Til</p>
+                    <select style="width: 100%; padding: 10px;">
+                          <option>00</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+
+
+                    </select>
+            </div>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementsByClassName("action-btn")[0];
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+                modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+                modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+                if (event.target == modal) {
+                        modal.style.display = "none";
+                }
+                
+                }
+</script>
+  </body>
+</html>
